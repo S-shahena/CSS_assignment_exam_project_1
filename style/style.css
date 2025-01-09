@@ -1,0 +1,130 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+/* header_section_start */
+#header_section{
+width: 100%;
+background-color: #182C61;
+position: fixed;
+top:0;
+left: 0;
+}
+
+/* header_area */
+.header_area{
+width: 90%;
+margin: 0 auto;
+padding: 10px 5px;
+display: grid;
+grid-template-columns: 1fr 3fr 1fr;
+gap:5px 10px;
+}
+
+/* logo */
+.logo{
+height: 50px;
+width: 50px;
+
+}
+.logo img{
+width: 100%;
+border-radius: 50%;
+}
+
+/* nav */
+.nav{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+
+}
+.nav a{
+color: white;
+text-decoration: none;
+font-size: 15px;
+margin: 0 10px;
+text-transform: uppercase;
+letter-spacing: 1px;
+transition: 2s;
+transition-property:boder-bottom;
+}
+.nav a:hover{
+border-bottom: 1px solid #d2dae2;
+color: #fc5c65;
+}
+.nav a:focus{
+border-bottom: 1px solid #d2dae2;
+color: #20bf6b;
+}
+
+/* button */
+.button{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.button button{
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.button button:hover{
+    text-transform: uppercase;
+    background-color: #ffaf40;
+ 
+}
+ /* header_section_end */ 
+
+/* ........................................................ */
+
+/* main_section_start */
+#main_section{
+    width: 100%;
+    background-color: #fc5c65;
+}
+
+/* .content_area */
+.content_area{
+width: 95%;
+margin: 0 auto;
+padding: 5px;
+background-color: aliceblue;
+}
+.from{
+    margin-top: 100px;
+}
+
+
+
+/* main_section_end */
+
+
+ /* responsive max-width:600px */
+ @media only screen and (max-width:600px){
+    
+    /* header_section_responsive */
+    .header_area{
+        grid-template-columns: 1fr;
+    }
+
+    .nav{
+        flex-direction: column;
+    }
+
+    .nav a{
+        margin:  5px;
+    }
+        
+ }

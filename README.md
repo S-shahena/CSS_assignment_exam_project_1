@@ -9,4 +9,5 @@
 8. background-color;
 8. transitions;
 9. transform;
+10. animation
 
